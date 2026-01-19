@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+h1{text-align: center; background-color: rgba(15, 191, 245, 0.815); color: aliceblue;}
+h2{text-align: center; background-color: aliceblue; color: rgba(15, 191, 245, 0.815);}
+.mainContent{padding-left: 2vw;padding-right: 2vw;}
+.summary{width: 30vw;padding-left: 2vw;}
+</style>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+ <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+ <link  rel="stylesheet" href="../../../../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+ <link  rel="stylesheet" href="../../../../wwwroot/css/personal.css">
+<script src="../../../../wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+<script src="../../../../wwwroot/lib/datatables/js/dataTables.min.js"></script>
+<script src="../../../../wwwroot/lib/datatables/js/dataTables.bootstrap5.min.js"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Project Metadata -->
+<meta name="Engineer" content="Justin">
+<meta name="SerialNO" content="Test1">
+<meta name="Model" content="VC2V">
+<meta name="Qty" content="1">
+<meta name="Note" content="">
+<meta name="Notes" content="VC2V Hood Size: 96X90X15X6
+Crate Size: L100 W102 H27
+2 Collars with ABD 6 with Access Panel : L10 W8 H4
+with HCL Lights Qty=3
+Marvel Box On Hood Top, There is ThermStat
+Ansul On Left, Drops Qty=3">
+<meta name="ModelData" content="Overall Size and option:,HL:96,HW:90,HT:15,WidthFront:6,WidthPods:30.403937007874,WidthMiddle:17.192125984252,WidthBack:6,Marvel:Marvel Box On Hood Top,ThermStat:There is ThermStat,QtyCollar:2 Collars,CollarFlangePosition:Top Flange Only,ABDType:ABD 6 with Access Panel,Left ABD Access Side:Right ABD Access Panel,Middle ABD Access Side:Left ABD Access Panel,Right ABD Access Side:Right ABD Access Panel,Marvel Probe On which Collar:Marvel Probe On Right Collar,CollarLG:10,CollarWidth:8,CollarHT:4,Collar1ToLeft:24,Collars Dist:48,LightType:with HCL Lights,LightQty:3,LightToFront:45,LigthToLeft:16,Lights Dist:32,Ansultype:Ansul On Left,AnsulDropQty:3,AnsulToFront:38,A1:6,A2:6,A3:6,A4:6,A5:6,A6:6,A7:6,A8:6,A9:6,A10:6,A11:6,KsaWidth:497,KsaHT:13,KsaOVERLAP:0.375,KSAHalfwidthOccupied:286,Material GA:18 GA">
+<meta name="JobName" content="Test VC2V">
+<meta name="JobCode" content="Test">
+<!-- Date Metadata -->
+<meta name="ReleasedDate" content="2026-01-19T14:09:01">
+<meta name="ShipDate" content="2025-05-30">
+<meta name="DesignDate" content="2025-08-25">
+<meta name="CheckDate" content="2025-08-30T02:32:14">
+<meta name="CNCDate" content="2025-08-25">
+<meta name="PunchDate" content="2025-08-25">
+<meta name="BrakeDate" content="2025-08-25">
+<meta name="WeldDate" content="2025-08-25">
+<meta name="AssemblyDate" content="2025-08-25">
+<meta name="CrateDate" content="2025-08-25" >
+<meta name="ShippedDate" content="2025-08-25">
+<meta name="Status" content="Released">
+<!-- File Relationships -->
+<meta name="BOMHTMLFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test.html">
+<meta name="BOMExcelFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test.xlsx">
+<meta name="AssemPDFFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\VC2V00-Test.pdf">
+<meta name="AssemEASMFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\VC2V00-Test.easm">
+<meta name="AssemEDRWFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\VC2V00-Test.edrw">
+<meta name="AssemJpgFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\VC2V00-Test.jpg">
+<meta name="AssemJpgdrwFile" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\VC2V00-Test-drw.jpg">
+<meta name="CNCFile1" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test1.pdf">
+<meta name="CNCFile2" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test2.pdf">
+<meta name="CNCFile3" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test3.pdf">
+<meta name="CNCFile4" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test4.pdf">
+<meta name="CNCFile5" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test5.pdf">
+<meta name="CNCFile6" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test6.pdf">
+<meta name="CNCFile7" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test7.pdf">
+<meta name="CNCFile8" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\BOM-VC2V00-Test8.pdf">
+<meta name="NewSubfolder" content="Content\CustomizedProduct\_US_25\U25010A-VC2V\">
+<meta name="AssemblyName" content="VC2V00-Test">
+<title>VC2V00-Test-BOM</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-info navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="https://www.halton.com/">Halton</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../../../../Content/DigitalFactory.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../../../Content/CustomizedProduct/CustomizedProduct.html">Customized Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../../../Content/StandardProduct/StandardProduct.html">Standard Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../../../Content/StockPartLibrary/StockPartLibrary.html">Stock Part Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../../../Content/DF-About.html">About</a>
+      </li>
+      <li class="nav-item">
+<a class="nav-link" href="../_US_25.html">_US_25 Index</a>
+</li>
+      <li class="nav-item">
+<a class="nav-link" href="../">Parent Directory</a>
+</li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="BOM-VC2V00-Test.xlsx">ExcelBOM</a>
+                                  </li>
+</ul>
+  </div>
+</nav><br>
+<br>
+<h1>Test VC2V</h1><br>
+<h2>VC2V00-Test</h2><br>
+<LABEL for="status">Project Status</LABEL>
+<select id="status">
+<option value="Design">Design</option>
+<option value="Check">Check</option>
+<option value="CNC">CNC</option>
+<option value="Released">Released</option>
+<option value="Punch">Punch</option>
+<option value="Brake">Brake</option>
+<option value="Weld">Weld</option>
+<option value="Assembly">Assembly</option>
+<option value="Crate">Crate</option>
+<option value="Shipped">Shipped</option>
+</select>
+<div class="mainContent">
+<table  class="table table-borderless table-responsive align-middle">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th><a href="VC2V00-Test.EASM" target="_parent"><img src="VC2V00-Test.jpg" height="300" title="Click to download VC2V00-Test.EASM"  alt="Click to download VC2V00-Test.EASM" ></a></th>
+<th><a href="VC2V00-Test.pdf" target="_parent"><img src="VC2V00-Test-drw.jpg" height="300" title="Click to download VC2V00-Test.pdf"  alt="Click to download VC2V00-Test.pdf"></a></th><br><br>
+<th>VC2V Hood Size: 96X90X15X6<br>Crate Size: L100 W102 H27<br>2 Collars with ABD 6 with Access Panel : L10 W8 H4<br>with HCL Lights Qty=3<br>Marvel Box On Hood Top, There is ThermStat<br>Ansul On Left, Drops Qty=3</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+</table>
+<p>
+<table class="table table-info table-bordered table-responsive align-middle">
+<thead class="table-primary">
+<tr>
+<th>Engineer</th>
+<th>Serial NO</th>
+<th>Model</th>
+<th>Qty</th>
+<th>CNC Nest Files</th>
+<th>Ship Date</th>
+<th>Sales DWGs</th>
+</tr>
+</thead>
+<tbody class="table-info table-group-divider">
+<tr>
+<td>Justin</td>
+<td>Test1</td>
+<td>VC2V</td>
+<td>1</td>
+<td><a href="BOM-VC2V00-Test1.pdf" class="btn btn-success" title="Click to open BOM-VC2V00-Test1.pdf">1</a> &nbsp;<a href="BOM-VC2V00-Test2.pdf" class="btn btn-danger" title="Click to open BOM-VC2V00-Test2.pdf">2</a> &nbsp;<a href="BOM-VC2V00-Test3.pdf" class="btn btn-warning" title="Click to open BOM-VC2V00-Test3.pdf">3</a> &nbsp;<a href="BOM-VC2V00-Test4.pdf" class="btn btn-success" title="Click to open BOM-VC2V00-Test4.pdf">4</a> &nbsp;<a href="BOM-VC2V00-Test5.pdf" class="btn btn-danger" title="Click to open BOM-VC2V00-Test5.pdf">5</a> &nbsp;<a href="BOM-VC2V00-Test6.pdf" class="btn btn-warning" title="Click to open BOM-VC2V00-Test6.pdf">6</a> &nbsp;</td>
+<td>2025-05-30</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>
+<div class='d-flex justify-content-center'>
+    <div class='input-group mb-3' style='max-width: 450px;'>
+        <input type='text' id='globalSearch' class='form-control' placeholder='Search all parts...'>
+        <button class='btn btn-outline-secondary' type='button' id='clearSearch'>
+            <span aria-hidden='true'>&times;</span> Clear
+        </button>
+    </div>
+</div>
+<table  class="table table-info table-hover table-bordered table-responsive sortable-table">
+<thead class="table-primary">
+<tr>
+<th>Done</th>
+<th>Material</th>
+<th>X (Grain inch)</th>
+<th>Y (inch)</th>
+<th>Part Description</th>
+<th>QTY.</th>
+<th>Part Number</th>
+<th>JPG</th>
+<th>DXF</th>
+</tr>
+</thead>
+<tbody class="table-info table-group-divider">
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>16 GA ALUM</td>
+                                    <td>3.937</td>
+                                    <td>8.575</td>
+                                    <td>HANGER BRACKET - BOLT ON</td>
+                                    <td>8</td>
+                                    <td><a href="53041XX.pdf" title="Click to view 53041XX.pdf">53041XX</a></td>
+                                    <td><a href="53041XX-drw.jpg" target="_parent"><img src="53041XX-drw.jpg" height="100" title="Click to download 53041XX-drw.jpg" alt="Click to download 53041XX-drw.jpg"></a></td>
+                                    <td><a href="53041XX.dxf" download="53041XX.dxf"  target="_parent"><img src="53041XX.jpg" height="100" title="Click to download 53041XX.dxf"  alt="Click to download 53041XX.dxf" ></a></td>
+                                    </tr>
+</tbody>
+</table>
+</p>
+<p>
+<table class="table table-hover table-bordered table-responsive sortable-table">
+<thead class="table-primary">
+<tr>
+<th>Done</th>
+<th>Material</th>
+<th>X (Grain inch)</th>
+<th>Y (inch)</th>
+<th>Part Description</th>
+<th>QTY.</th>
+<th>Part Number</th>
+<th>JPG</th>
+<th>DXF</th>
+</tr>
+</thead>
+<tbody class="table-info table-group-divider">
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>5.157</td>
+                                    <td>2.756</td>
+                                    <td>CA-LIR-Sensor Plate</td>
+                                    <td>1</td>
+                                    <td><a href="40563XX.pdf" title="Click to view 40563XX.pdf">40563XX</a></td>
+                                    <td><a href="40563XX-drw.jpg" target="_parent"><img src="40563XX-drw.jpg" height="100" title="Click to download 40563XX-drw.jpg" alt="Click to download 40563XX-drw.jpg"></a></td>
+                                    <td><a href="40563XX.dxf" download="40563XX.dxf"  target="_parent"><img src="40563XX.jpg" height="100" title="Click to download 40563XX.dxf"  alt="Click to download 40563XX.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>9.812</td>
+                                    <td>11.247</td>
+                                    <td>CA-Hood-Damper Access Panel</td>
+                                    <td>4</td>
+                                    <td><a href="51399XX.pdf" title="Click to view 51399XX.pdf">51399XX</a></td>
+                                    <td><a href="51399XX-drw.jpg" target="_parent"><img src="51399XX-drw.jpg" height="100" title="Click to download 51399XX-drw.jpg" alt="Click to download 51399XX-drw.jpg"></a></td>
+                                    <td><a href="51399XX.dxf" download="51399XX.dxf"  target="_parent"><img src="51399XX.jpg" height="100" title="Click to download 51399XX.dxf"  alt="Click to download 51399XX.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>20.323</td>
+                                    <td>6.382</td>
+                                    <td>ABD6 Marvel Temp Probe Protect Bracket</td>
+                                    <td>2</td>
+                                    <td><a href="52825AX-146175.pdf" title="Click to view 52825AX-146175.pdf">52825AX-146175</a></td>
+                                    <td><a href="52825AX-146175-drw.jpg" target="_parent"><img src="52825AX-146175-drw.jpg" height="100" title="Click to download 52825AX-146175-drw.jpg" alt="Click to download 52825AX-146175-drw.jpg"></a></td>
+                                    <td><a href="52825AX-146175.dxf" download="52825AX-146175.dxf"  target="_parent"><img src="52825AX-146175.jpg" height="100" title="Click to download 52825AX-146175.dxf"  alt="Click to download 52825AX-146175.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>97.564</td>
+                                    <td>32.064</td>
+                                    <td>CA-VC2V-Pod Top</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V01-9621082448211.pdf" title="Click to view VC2V01-9621082448211.pdf">VC2V01-9621082448211</a></td>
+                                    <td><a href="VC2V01-9621082448211-drw.jpg" target="_parent"><img src="VC2V01-9621082448211-drw.jpg" height="100" title="Click to download VC2V01-9621082448211-drw.jpg" alt="Click to download VC2V01-9621082448211-drw.jpg"></a></td>
+                                    <td><a href="VC2V01-9621082448211.dxf" download="VC2V01-9621082448211.dxf"  target="_parent"><img src="VC2V01-9621082448211.jpg" height="100" title="Click to download VC2V01-9621082448211.dxf"  alt="Click to download VC2V01-9621082448211.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>97.564</td>
+                                    <td>32.064</td>
+                                    <td>CA-VC2V-Pod Top</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V01A-9621082448211.pdf" title="Click to view VC2V01A-9621082448211.pdf">VC2V01A-9621082448211</a></td>
+                                    <td><a href="VC2V01A-9621082448211-drw.jpg" target="_parent"><img src="VC2V01A-9621082448211-drw.jpg" height="100" title="Click to download VC2V01A-9621082448211-drw.jpg" alt="Click to download VC2V01A-9621082448211-drw.jpg"></a></td>
+                                    <td><a href="VC2V01A-9621082448211.dxf" download="VC2V01A-9621082448211.dxf"  target="_parent"><img src="VC2V01A-9621082448211.jpg" height="100" title="Click to download VC2V01A-9621082448211.dxf"  alt="Click to download VC2V01A-9621082448211.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>95.808</td>
+                                    <td>6.865</td>
+                                    <td>CA-VC2V-Filter Rack</td>
+                                    <td>4</td>
+                                    <td><a href="VC2V02-9613.pdf" title="Click to view VC2V02-9613.pdf">VC2V02-9613</a></td>
+                                    <td><a href="VC2V02-9613-drw.jpg" target="_parent"><img src="VC2V02-9613-drw.jpg" height="100" title="Click to download VC2V02-9613-drw.jpg" alt="Click to download VC2V02-9613-drw.jpg"></a></td>
+                                    <td><a href="VC2V02-9613.dxf" download="VC2V02-9613.dxf"  target="_parent"><img src="VC2V02-9613.jpg" height="100" title="Click to download VC2V02-9613.dxf"  alt="Click to download VC2V02-9613.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>95.819</td>
+                                    <td>10.904</td>
+                                    <td>CA-VC2V-Grease Trough</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V03-96.pdf" title="Click to view VC2V03-96.pdf">VC2V03-96</a></td>
+                                    <td><a href="VC2V03-96-drw.jpg" target="_parent"><img src="VC2V03-96-drw.jpg" height="100" title="Click to download VC2V03-96-drw.jpg" alt="Click to download VC2V03-96-drw.jpg"></a></td>
+                                    <td><a href="VC2V03-96.dxf" download="VC2V03-96.dxf"  target="_parent"><img src="VC2V03-96.jpg" height="100" title="Click to download VC2V03-96.dxf"  alt="Click to download VC2V03-96.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>30.404</td>
+                                    <td>15.131</td>
+                                    <td>CA-VC2V-Pod End LT</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V04-91311.pdf" title="Click to view VC2V04-91311.pdf">VC2V04-91311</a></td>
+                                    <td><a href="VC2V04-91311-drw.jpg" target="_parent"><img src="VC2V04-91311-drw.jpg" height="100" title="Click to download VC2V04-91311-drw.jpg" alt="Click to download VC2V04-91311-drw.jpg"></a></td>
+                                    <td><a href="VC2V04-91311.dxf" download="VC2V04-91311.dxf"  target="_parent"><img src="VC2V04-91311.jpg" height="100" title="Click to download VC2V04-91311.dxf"  alt="Click to download VC2V04-91311.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>30.404</td>
+                                    <td>15.132</td>
+                                    <td>CA-VC2V-Pod End RT</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V05-91330.pdf" title="Click to view VC2V05-91330.pdf">VC2V05-91330</a></td>
+                                    <td><a href="VC2V05-91330-drw.jpg" target="_parent"><img src="VC2V05-91330-drw.jpg" height="100" title="Click to download VC2V05-91330-drw.jpg" alt="Click to download VC2V05-91330-drw.jpg"></a></td>
+                                    <td><a href="VC2V05-91330.dxf" download="VC2V05-91330.dxf"  target="_parent"><img src="VC2V05-91330.jpg" height="100" title="Click to download VC2V05-91330.dxf"  alt="Click to download VC2V05-91330.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>14.473</td>
+                                    <td>4.648</td>
+                                    <td>CA-VC2V-Grease Cup Support</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V07.pdf" title="Click to view VC2V07.pdf">VC2V07</a></td>
+                                    <td><a href="VC2V07-drw.jpg" target="_parent"><img src="VC2V07-drw.jpg" height="100" title="Click to download VC2V07-drw.jpg" alt="Click to download VC2V07-drw.jpg"></a></td>
+                                    <td><a href="VC2V07.dxf" download="VC2V07.dxf"  target="_parent"><img src="VC2V07.jpg" height="100" title="Click to download VC2V07.dxf"  alt="Click to download VC2V07.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>89.904</td>
+                                    <td>21.070</td>
+                                    <td>CA-VC2V-Side End LT</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V10-9015606.pdf" title="Click to view VC2V10-9015606.pdf">VC2V10-9015606</a></td>
+                                    <td><a href="VC2V10-9015606-drw.jpg" target="_parent"><img src="VC2V10-9015606-drw.jpg" height="100" title="Click to download VC2V10-9015606-drw.jpg" alt="Click to download VC2V10-9015606-drw.jpg"></a></td>
+                                    <td><a href="VC2V10-9015606.dxf" download="VC2V10-9015606.dxf"  target="_parent"><img src="VC2V10-9015606.jpg" height="100" title="Click to download VC2V10-9015606.dxf"  alt="Click to download VC2V10-9015606.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>89.904</td>
+                                    <td>21.070</td>
+                                    <td>CA-VC2V-Side End RT</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V11-9015606.pdf" title="Click to view VC2V11-9015606.pdf">VC2V11-9015606</a></td>
+                                    <td><a href="VC2V11-9015606-drw.jpg" target="_parent"><img src="VC2V11-9015606-drw.jpg" height="100" title="Click to download VC2V11-9015606-drw.jpg" alt="Click to download VC2V11-9015606-drw.jpg"></a></td>
+                                    <td><a href="VC2V11-9015606.dxf" download="VC2V11-9015606.dxf"  target="_parent"><img src="VC2V11-9015606.jpg" height="100" title="Click to download VC2V11-9015606.dxf"  alt="Click to download VC2V11-9015606.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>96.000</td>
+                                    <td>21.028</td>
+                                    <td>CA-VC2V-FrontBackPanel</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V12-9615.pdf" title="Click to view VC2V12-9615.pdf">VC2V12-9615</a></td>
+                                    <td><a href="VC2V12-9615-drw.jpg" target="_parent"><img src="VC2V12-9615-drw.jpg" height="100" title="Click to download VC2V12-9615-drw.jpg" alt="Click to download VC2V12-9615-drw.jpg"></a></td>
+                                    <td><a href="VC2V12-9615.dxf" download="VC2V12-9615.dxf"  target="_parent"><img src="VC2V12-9615.jpg" height="100" title="Click to download VC2V12-9615.dxf"  alt="Click to download VC2V12-9615.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>95.904</td>
+                                    <td>14.073</td>
+                                    <td>VC2V-Grease Cup Cover</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V14-96.pdf" title="Click to view VC2V14-96.pdf">VC2V14-96</a></td>
+                                    <td><a href="VC2V14-96-drw.jpg" target="_parent"><img src="VC2V14-96-drw.jpg" height="100" title="Click to download VC2V14-96-drw.jpg" alt="Click to download VC2V14-96-drw.jpg"></a></td>
+                                    <td><a href="VC2V14-96.dxf" download="VC2V14-96.dxf"  target="_parent"><img src="VC2V14-96.jpg" height="100" title="Click to download VC2V14-96.dxf"  alt="Click to download VC2V14-96.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>14.591</td>
+                                    <td>7.706</td>
+                                    <td>CA-VC2V-Grease Cup</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V15.pdf" title="Click to view VC2V15.pdf">VC2V15</a></td>
+                                    <td><a href="VC2V15-drw.jpg" target="_parent"><img src="VC2V15-drw.jpg" height="100" title="Click to download VC2V15-drw.jpg" alt="Click to download VC2V15-drw.jpg"></a></td>
+                                    <td><a href="VC2V15.dxf" download="VC2V15.dxf"  target="_parent"><img src="VC2V15.jpg" height="100" title="Click to download VC2V15.dxf"  alt="Click to download VC2V15.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>12.795</td>
+                                    <td>4.092</td>
+                                    <td>VC2V-Grease Cup Front Cover</td>
+                                    <td>2</td>
+                                    <td><a href="VC2V16.pdf" title="Click to view VC2V16.pdf">VC2V16</a></td>
+                                    <td><a href="VC2V16-drw.jpg" target="_parent"><img src="VC2V16-drw.jpg" height="100" title="Click to download VC2V16-drw.jpg" alt="Click to download VC2V16-drw.jpg"></a></td>
+                                    <td><a href="VC2V16.dxf" download="VC2V16.dxf"  target="_parent"><img src="VC2V16.jpg" height="100" title="Click to download VC2V16.dxf"  alt="Click to download VC2V16.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>97.660</td>
+                                    <td>20.440</td>
+                                    <td>VC2V-Light Panel-Center</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V18-964371M7338666.pdf" title="Click to view VC2V18-964371M7338666.pdf">VC2V18-964371M7338666</a></td>
+                                    <td><a href="VC2V18-964371M7338666-drw.jpg" target="_parent"><img src="VC2V18-964371M7338666-drw.jpg" height="100" title="Click to download VC2V18-964371M7338666-drw.jpg" alt="Click to download VC2V18-964371M7338666-drw.jpg"></a></td>
+                                    <td><a href="VC2V18-964371M7338666.dxf" download="VC2V18-964371M7338666.dxf"  target="_parent"><img src="VC2V18-964371M7338666.jpg" height="100" title="Click to download VC2V18-964371M7338666.dxf"  alt="Click to download VC2V18-964371M7338666.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>97.660</td>
+                                    <td>8.454</td>
+                                    <td>VC2V-Light Panel-Back</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V19-966.pdf" title="Click to view VC2V19-966.pdf">VC2V19-966</a></td>
+                                    <td><a href="VC2V19-966-drw.jpg" target="_parent"><img src="VC2V19-966-drw.jpg" height="100" title="Click to download VC2V19-966-drw.jpg" alt="Click to download VC2V19-966-drw.jpg"></a></td>
+                                    <td><a href="VC2V19-966.dxf" download="VC2V19-966.dxf"  target="_parent"><img src="VC2V19-966.jpg" height="100" title="Click to download VC2V19-966.dxf"  alt="Click to download VC2V19-966.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>97.660</td>
+                                    <td>8.454</td>
+                                    <td>VC2V-Light Panel-Front</td>
+                                    <td>1</td>
+                                    <td><a href="VC2V20-966.pdf" title="Click to view VC2V20-966.pdf">VC2V20-966</a></td>
+                                    <td><a href="VC2V20-966-drw.jpg" target="_parent"><img src="VC2V20-966-drw.jpg" height="100" title="Click to download VC2V20-966-drw.jpg" alt="Click to download VC2V20-966-drw.jpg"></a></td>
+                                    <td><a href="VC2V20-966.dxf" download="VC2V20-966.dxf"  target="_parent"><img src="VC2V20-966.jpg" height="100" title="Click to download VC2V20-966.dxf"  alt="Click to download VC2V20-966.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>14.921</td>
+                                    <td>5.296</td>
+                                    <td>VC 1 IR Bar Box Cover</td>
+                                    <td>1</td>
+                                    <td><a href="Vc1IRBar08-1.pdf" title="Click to view Vc1IRBar08-1.pdf">Vc1IRBar08-1</a></td>
+                                    <td><a href="Vc1IRBar08-1-drw.jpg" target="_parent"><img src="Vc1IRBar08-1-drw.jpg" height="100" title="Click to download Vc1IRBar08-1-drw.jpg" alt="Click to download Vc1IRBar08-1-drw.jpg"></a></td>
+                                    <td><a href="Vc1IRBar08-1.dxf" download="Vc1IRBar08-1.dxf"  target="_parent"><img src="Vc1IRBar08-1.jpg" height="100" title="Click to download Vc1IRBar08-1.dxf"  alt="Click to download Vc1IRBar08-1.dxf" ></a></td>
+                                    </tr>
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S - #4</td>
+                                    <td>20.799</td>
+                                    <td>11.174</td>
+                                    <td>Ventilation Ceiling 1 IR Bar, Body</td>
+                                    <td>1</td>
+                                    <td><a href="Vc1Lir2Bar01-1.pdf" title="Click to view Vc1Lir2Bar01-1.pdf">Vc1Lir2Bar01-1</a></td>
+                                    <td><a href="Vc1Lir2Bar01-1-drw.jpg" target="_parent"><img src="Vc1Lir2Bar01-1-drw.jpg" height="100" title="Click to download Vc1Lir2Bar01-1-drw.jpg" alt="Click to download Vc1Lir2Bar01-1-drw.jpg"></a></td>
+                                    <td><a href="Vc1Lir2Bar01-1.dxf" download="Vc1Lir2Bar01-1.dxf"  target="_parent"><img src="Vc1Lir2Bar01-1.jpg" height="100" title="Click to download Vc1Lir2Bar01-1.dxf"  alt="Click to download Vc1Lir2Bar01-1.dxf" ></a></td>
+                                    </tr>
+</tbody>
+</table>
+</p>
+<p>
+<table class="table table-hover table-bordered table-responsive sortable-table">
+<thead class="table-primary">
+<tr>
+<th>Done</th>
+<th>Material</th>
+<th>X (Grain inch)</th>
+<th>Y (inch)</th>
+<th>Part Description</th>
+<th>QTY.</th>
+<th>Part Number</th>
+<th>JPG</th>
+<th>DXF</th>
+</tr>
+</thead>
+<tbody class="table-info table-group-divider">
+<tr>
+                                    <td><input class="done-checkbox" type="checkbox"></td>
+                                    <td>18 GA S/S PERF</td>
+                                    <td>3.780</td>
+                                    <td>3.780</td>
+                                    <td>Perf Panel On top of Fan</td>
+                                    <td>1</td>
+                                    <td><a href="VcIRBar04.pdf" title="Click to view VcIRBar04.pdf">VcIRBar04</a></td>
+                                    <td><a href="VcIRBar04-drw.jpg" target="_parent"><img src="VcIRBar04-drw.jpg" height="100" title="Click to download VcIRBar04-drw.jpg" alt="Click to download VcIRBar04-drw.jpg"></a></td>
+                                    <td><a href="VcIRBar04.dxf" download="VcIRBar04.dxf"  target="_parent"><img src="VcIRBar04.jpg" height="100" title="Click to download VcIRBar04.dxf"  alt="Click to download VcIRBar04.dxf" ></a></td>
+                                    </tr>
+</tbody>
+</table>
+</p>
+</div>
+<div class="summary">
+<p>
+<LABEL>Material Usage Summary</LABEL><br>
+<table class="table table-warning table-hover table-bordered align-top">
+<thead class="table-primary">
+<tr>
+<th>Material</th>
+<th>Weight Lbs</th>
+</tr>
+</thead>
+<tfoot class="table-group-divider">
+<tr>
+<td>16 GA ALUM</td>
+<td>4.88</td>
+</tr>
+<tr>
+<td>18 GA S/S - #4</td>
+<td>398.73</td>
+</tr>
+<tr>
+<td>18 GA S/S PERF</td>
+<td>0.12</td>
+</tr>
+</tfoot>
+</table>
+</p>
+</div>
+<script src="../../../../wwwroot/js/MetaDataProjectUpdate.js"></script>
+<script src="../../../../wwwroot/js/sorttables.js"></script>
+</body>
+</html>
