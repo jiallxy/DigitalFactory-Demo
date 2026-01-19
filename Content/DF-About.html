@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'>
+  
+<title>About Halton Digital Factory</title>
+<link rel="stylesheet" href="../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+<script src="../wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../wwwroot/css/personal.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-info navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.halton.com/">Halton</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="DigitalFactory.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="CustomizedProduct\CustomizedProduct.html">Customized Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="StandardProduct\StandardProduct.html">Standard Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="StockPartLibrary/StockPartLibrary.html">Stock Part Library</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<h1>About Halton Digital Factory</h1><br>
+<div class="mainContent">
+  <h2>Objective</h2><br>
+  <p>
+    Develop a website that integrates the entire manufacturing process, streamlining workflows and eliminating paper-based documentation.
+  </p>
+  <h2>Implementation Plan</h2><br>
+  <h3>Phase 1: Static Website on a Local Server</h3><br>
+  <p>
+    The transition to a Digital Factory starts by digitizing all engineering documents and establishing a centralized database for project parameters. The initial phase includes a static website hosted on a local server.
+  </p>
+  <h3>Phase 2: Dynamic Web Application on an HTTP Server</h3><br>
+  <p>
+    This phase introduces advanced search capabilities, allowing managers, sales teams, and engineers to retrieve historical project data efficiently. A role-based access control system will be implemented, ensuring appropriate access rights for users. All relevant data will be stored in an SQL database, facilitating job assignments and project tracking.
+  </p>
+  <h3>Phase 3: Expansion Across Additional Departments</h3><br>
+  <p>
+    Additional functionalities will be integrated to enable factory workers to log process start and end times. This will provide managers with real-time workflow insights and help analyze labor efficiency. Historical data will be leveraged to optimize project timelines and workforce planning.
+  </p>
+  <h3>Phase 4: AI Integration with DeepSeek</h3><br>
+  <p>
+    It is just an idea now, and I have no clear plan yet.
+  </p>
+  <p>
+    This journey may take years. We hope you’ll join us along the way and contribute ideas to further improve the system.
+  </p>
+
+  <h2>Current Status</h2><br>
+  <p>
+    We are currently in Phase 1 of the project.
+  </p>
+  <h2>Managing the Drawing Library</h2><br>
+  <p>
+    The website is designed for maintenance by engineers familiar with SolidWorks and my add-in application in SolidWorks. Engineering files are stored in the CustomizedProduct, StandardProduct, and StockPartLibrary subfolders.
+  </p>
+  <h3>CustomizedProduct Management</h3><br>
+  <p>
+    Customized product designs require frequent updates and daily maintenance. The manufacturing packages are saved in DigitalFactory/Content/CustomizedProduct.
+  </p>
+  <p>
+    Creating a Customized Project Manufacturing Package
+  </p>
+  <p>
+    1.	Create a new project folder under the respective year (e.g., CustomizedProduct/ _CAN_24).
+  </p>
+  <p>
+    2.	Use JustinTool to generate the manufacturing package to the folder.
+  </p>
+  <p>
+    3.	The tool automatically updates the home page of the digital factory and the yearly project index file and integrates new BOM files.
+  </p>
+  <p>
+    4.	Users can search and filter projects efficiently through the index file.
+  </p>
+  <p>
+    Additionally, project key parameters are stored in a JSON file for future data mining and search functionality enhancements.
+  </p>
+  <h3>StockPartLibrary Management</h3><br>
+  <h4>Adding a New Stock Part</h4><br>
+  <p>
+    1.	Open StockPartHoodCommon.sldasm in SolidWorks.
+  </p>
+  <p>
+    2.	Insert the new stock part assembly (e.g., RSB00.sldasm)
+  </p>
+  <p>
+    3.	Export PDF, DXF, JPG files of stock parts (RSB01.sldprt, RSB02.sldprt) to the appropriate folder.
+  </p>
+  <p>
+    4.	Save the HTML BOM file for the updated assembly in the corresponding directory.
+  </p>
+  <p>
+    5.	The new stock parts will be reflected in StockPartHoodCommon.EASM and BOM-StockPartHoodCommon.html.
+  </p>
+  <h4>Creating a New Stock Part Subfolder</h4><br>
+  <p>
+    1.	Create a new folder (e.g., KVE) under DigitalFactory/Content/StockPartLibrary.
+  </p>
+  <p>
+    2.	Develop an assembly file (for example: StockPartKVE.sldasm) and set a custom property for notes.
+  </p>
+  <p>
+    3.	Use JustinTool to generate a manufacturing package to the new folder, which will automatically update the stock part library.
+  </p>
+
+  <h3>StandardProduct Management</h3><br>
+
+  <p>
+    For products like control panels that undergo minimal design changes, manufacturing packages are stored in DigitalFactory/Content/StandardProduct.
+  </p>
+
+  <h4>
+    Example: Creating a Standard Product Manufacturing Package
+  </h4><br>
+  <p>
+    1.	Create a job folder under CustomizedProduct (e.g., C25104A). Copy the following files into the folder: Submittal drawing: C25-104 - S1 (GL-L-38).dwg and Excel BOM for 38” A&W hood: BOM-GL-L-38C8104.5P.
+  </p>
+  <p>
+    2.	Update Project Information in Excel BOM.
+  </p>
+  <p>
+    3.	Launch JustinToolsBaske and locate the Excel BOM file.
+  </p>
+  <p>
+    4.	Execute the Release Process by click “Add STD BOM For This Job”, then select the Standard Product Library Folder in the dialog.
+  </p>
+  <p>
+    5.	Click Update Project Status to CNC or released.
+  </p>
+  <br>
+  <h4>
+    Example: Adding a Standard Product to Library
+  </h4><br>
+  <p>
+    1.	Create a job folder under StandardProduct (e.g., StandardProduct\LCH\LCH2).
+  </p>
+  <p>
+    2.	Open the LCH hood SolidWorks model.
+  </p>
+  <p>
+    3.	Export BOM files, EASM, and PDF files to the folder (e.g., StandardProduct\LCH\LCH2).
+  </p>
+  <p>
+    4.	The sub category of LCH index file will add the information for LCH2 automatically.
+  </p>
+
+  <h2>Maintaining the HTML Index File</h2><br>
+
+  <h3>Adding or Updating Project Information</h3><br>
+  <p>
+    1.	Locate the HTML BOM file of the project.
+  </p>
+  <p>
+    2.	If updating, uncheck the “Update All” option.
+  </p>
+  <p>
+    3.	To delete a project from the index, check "Del From Index"; otherwise, the software will check for existing projects and update information as needed.
+  </p>
+  <p>
+    4.	Click the appropriate update button based on the project’s location.
+  </p>
+
+
+  <h3>Updating the Index File for All Subfolders</h3><br>
+  <p>
+    1.	Check the "Update All" option.
+  </p>
+  <p>
+    2.	Click the corresponding button to update the subfolder index files. If the combo box displays "-- Select Subfolder --", it will update CustomizedProduct.html or StandardProduct.html.
+  </p>
+
+  <h2>System Requirements</h2><br>
+  <p>
+    To optimize search functionality and standardize data entry, the following requirements must be met:
+  </p>
+  <p>
+    To optimize search functionality and standardize data entry, the following requirements must be met:
+  </p>
+  <p>
+    1.	Date Format: All dates should follow the YYYY-MM-DD format. Ensure Windows settings align accordingly.
+  </p>
+  <p>
+    2.	Custom Property "Notes": A detailed description must be added as a custom property in SolidWorks assemblies. This will be extracted into HTML BOM files via JustinTool. Engineers can use Excel configurator to create the content of “notes” automatically.
+  </p>
+  <h2>Website File Structure</h2><br>
+  <p>
+    DigitalFactory/                  # Solution Root Directory <br>
+│<br>
+├── wwwroot/                     # Static assets (CSS/JS/Images, no HTML)<br>
+│   ├── css/<br>
+│   ├── js/<br>
+│   ├── lib/                     # Bootstrap/jQuery, etc.<br>
+│   └── images/<br>
+│<br>
+├── App/                          # Server-side Code (Future Development)<br>
+│   ├── Controllers/<br>
+│   ├── Models/<br>
+│   ├── Views/                   <br>
+│   └── Services/<br>
+│<br>
+├── Content/                      # HTML content repository<br>
+│   ├── CustomizedProduct/       # Manufacturing packages for customized products<br>
+│   ├── StandardProduct/        # Manufacturing packages for standard products<br>
+│   ├── StockPartLibrary/       # Drawings for stock parts<br>
+│   └── Shared/                  # Reusable partial views<br>
+│   └── digitalfactory.html      #  entry point html file<br>
+│   └── DF-About.html  #Help file<br>
+│<br>
+├── Database/                     # SQL scripts/migrations<br>
+├── ClientApp/                    # (Optional) Frontend framework<br>
+├── Docs/                         # Documentation<br>
+
+<p>
+  By introducing these improvements, the Digital Factory will evolve into a robust system capable of streamlining engineering workflows and improving operational efficiency.
+</p>
+
+  </p>
+</div>
+<div class="summary">
+  <h3>Contact Us</h3>
+  <p>
+    <a class="nav-link" href="mailto:justin.luo@halton.com">Email to: Justin Luo</a>
+  </p>
+  <p>
+    <a class="nav-link" href="https://teams.microsoft.com/l/team/19%3A407ec540d2904091b3ac7446b16549ba%40thread.skype/conversations?groupId=efd22b37-0c0e-4682-98ba-b84feaa6b298&tenantId=6f217997-3513-4a47-a7c9-4250400dc5d4">MSTeam: Halton Design Automation Platform</a>
+  </p>
+  <p>
+    <a class="nav-link" href="DigitalFactoryHelp.docx" download>Download Help Document</a>
+  </p>
+</div>
+</body>
+</html>
