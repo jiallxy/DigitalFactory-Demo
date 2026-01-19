@@ -1,0 +1,120 @@
+
+h1 {
+    text-align: center;
+    background-color: deepskyblue;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    background-color: whitesmoke;
+    color: deepskyblue;
+}
+
+table {
+  width: 100%; /* Ensures the table fits within its container */
+  border-collapse: collapse;
+}
+
+th, td {
+  word-wrap: break-word; /* Ensures long words wrap */
+  white-space: normal; /* Allows text to wrap */
+}
+
+.thd-ProjectName{
+  width: 150px; /* Set a fixed width */
+  max-width: 200px; /* Ensure it doesn't expand */
+  overflow-wrap: break-word; /* Wraps long words */
+}
+
+.mainContent {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.summary {
+    width: 30vw;
+    padding-left: 2vw;
+}
+
+
+.CenterFooterLinks{
+    text-align: center; 
+}
+/*p{background-color: lightyellow;width: 70%;border:thin solid green;padding: 50px;margin: 20px;}*/
+
+.row-done td {
+  background-color: lightgray !important;
+}
+
+/* This ensures the grey color overrides Bootstrap's 'table-info' or 'table-hover' colors */
+.row-done {
+    background-color: #d3d3d3 !important; 
+    color: #6c757d !important;
+    opacity: 0.8;
+}
+
+/* Add a border on hover for navbar links */
+.navbar-nav .nav-link:hover {
+    border: 2px solid #fff;  /* White border when hovered */
+    border-radius: 5px;       /* Optional: rounded corners */
+    padding: 5px;             /* Optional: adds padding around the text */
+  }
+
+  /* CSS to set red and bold font for the "Status" column */
+.Design-column {
+    color: gray;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+
+  /* CSS to set red and bold font for the "Status" column */
+  .Check-column {
+    color: darkred;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .CNC-column {
+    color: blue;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Released-column {
+    color: darkorchid;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Punch-column {
+    color: orange;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Brake-column {
+    color: darkblue;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Weld-column {
+    color: darkgoldenrod;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Assembly-column {
+    color: darkorange;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Crate-column {
+    color: red;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+  /* CSS to set red and bold font for the "Status" column */
+  .Shipped-column {
+    color: black;           /* Makes the text red */
+    font-weight: bold;    /* Makes the text bold */
+}
+
+/* If paging is disabled, hide the 'Showing X of Y entries' text */
+.paging-disabled .dataTables_info, 
+.paging-disabled .dataTables_paginate {
+    display: none !important;
+}
