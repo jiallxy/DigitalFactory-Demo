@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // 3. Cloud Sync
             console.log(`Syncing status for ${projectName} to ${newStatus}...`);
-            fetch('https://127.0.0.1:5500/api/UpdateStatus', {
+            fetch('https://https://digital-factory-demo.vercel.app/api/UpdateStatus', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
