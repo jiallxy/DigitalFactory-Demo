@@ -10,31 +10,31 @@ document.addEventListener("DOMContentLoaded", function () {
             // 9 Columns
             order: [[6, "asc"]], 
             noSortTargets: [0, 7, 8],
-            pageLength:50
+            pageLength:5
         },
         '.MainIndexTable': { 
             // 10 Columns (Adjust '0' to whichever column you want sorted)
             order: [[1, "asc"]], 
             noSortTargets: [7,8,9], // Add indices here to disable sorting on specific columns,
-            pageLength:10
+            pageLength:5
         },
         '.StandardIndexTable': { 
             // 4 Columns
             order: [[0, "asc"]], 
             noSortTargets: [] , // Add indices here to disable sorting on specific columns,
-            pageLength:25
+            pageLength:5
         },
         '.YearlyIndexTable': { 
             // 1 Column
             order: [[0, "asc"]], 
             noSortTargets: [] , // Add indices here to disable sorting on specific columns,
-            pageLength:25
+            pageLength:5
         },
         '.sortable-table': { 
             // 1 Column
             order: [[0, "asc"]], 
             noSortTargets: [] , // Add indices here to disable sorting on specific columns,
-            pageLength:10
+            pageLength:5
         }
     };
 
