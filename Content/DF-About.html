@@ -35,8 +35,17 @@
 <h1>About Halton Digital Factory</h1><br>
 <div class="mainContent">
   <h2>Objective</h2><br>
+  <h3>
+    Digital Factory
+  </h3>
+    <p>
+    Develop a centralized web platform that stores the entire manufacturing process data, streamlining workflows and fully eliminating paper‑based documentation.
+  </p>
+    <h3>
+    Smart Factory
+  </h3>
   <p>
-    Develop a website that integrates the entire manufacturing process, streamlining workflows and eliminating paper-based documentation.
+    Evolve from data storage → data intelligence through machine learning–powered prediction, automation, and continuous improvement.
   </p>
   <h2>Implementation Plan</h2><br>
   <h3>Phase 1: Static Website on a Local Server</h3><br>
@@ -51,12 +60,35 @@
   <p>
     Additional functionalities will be integrated to enable factory workers to log process start and end times. This will provide managers with real-time workflow insights and help analyze labor efficiency. Historical data will be leveraged to optimize project timelines and workforce planning.
   </p>
-  <h3>Phase 4: AI Integration with DeepSeek</h3><br>
-  <p>
-    It is just an idea now, and I have no clear plan yet.
+ <h3>Phase 4: Smart Manufacturing — Leveraging Machine Learning for Precision Bidding and Scheduling</h3><br>
+     <p>The Vision: "The Digital Factory, powered by Machine Learning, will provide Halton with a cutting-edge Industry 4.0 environment, turning our engineering data into our greatest competitive asset."</p>
+  <h4>
+    Step 1: Data Extraction & Feature Engineering (The "Foundation")
+  </h4>
+  <p>The Task: ModelData is currently a string (e.g., "DL:14,DW:10,DH:6"). A Machine Learning model needs this in a table format.
+</p>
+<p>Practice Project: Write a script to connect to the SQL database, parse the ModelData strings, and create a "Flat Table" where each feature (DL, DW, Bend Count) is its own column.</p>
+
+<h4>Step 2: Supervised Learning - Regression (The "Predictor")</h4>
+<p>The Task: Predict "Time" and "Cost".</p>
+
+<p>Practice Project: Use the flat table to train a model. Input: Dimensions/Features. Output: CNCDate minus DesignDate or ShippedDate (Total Processing Time).</p>
+
+<h4>Step 3: Optimization & Domain Knowledge (The "Refinement")</h4>
+<p>The Task: Not all features are equal. A "Marvel" might add more assembly time than a "switch".</p>
+<p>Practice Project: Create a "Difficulty Index." that represents how "hard" a part is to make. See if this improves the model's accuracy.</p>
+
+<h4>Step 4: System Integration (The "Delivery")</h4>
+
+<p>The Task: Bring the machine learning Python model back into the digital factory environment.</p>
+
+<p>Practice Project: Build a "Quotation Simulator" page on the Digital Factory site. When a user enters project specs, the site sends the data to the machine learning Python script, which returns the predicted time and cost instantly.</p>
   </p>
+<p>Practice Project: Build a "Scheduling Simulator" page on the Digital Factory site. When a user enters project specs, the site sends the data to the machine learning Python script, which returns the predicted time slot available and manpower requirements instantly.</p>
+  </p>
+ 
   <p>
-    This journey may take years. We hope you’ll join us along the way and contribute ideas to further improve the system.
+    This journey may take years. We hope you’ll join us along the way and contribute ideas to further improve the system. 
   </p>
 
   <h2>Current Status</h2><br>
