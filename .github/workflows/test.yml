@@ -1,0 +1,33 @@
+name: Test trig_table.py
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          ref: copilot/create-table-for-function   # the PR branch
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run trig_table.py
+        run: python trig_table.py
+
+      - name: Verify sin(90°) output
+        run: python -c "
+        
+import math, subprocess, sys
+result = subprocess.run(['python', 'trig_table.py'], capture_output=True, text=True)
+assert 'Final: sin(90°) = 1.0' in result.stdout, 'Test FAILED: sin(90°) not 1.0'
+print('Test PASSED')
+"
