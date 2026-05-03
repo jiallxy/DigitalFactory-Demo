@@ -11,7 +11,7 @@ import math
 
 def generate_trig_table():
     # sin 1' ≈ 2.908882046 × 10^(-4)
-    s0 = 0.000290888
+    s0 = 2.908882046e-4
     # cos 1' = sqrt(1 - sin^2(1'))
     c0 = math.sqrt(1 - s0 ** 2)
 
@@ -29,7 +29,7 @@ def generate_trig_table():
 
     # n starts at 2, loop until n > 5400
     n = 2
-    while True:
+    while n <= 5400:
         # Recurrence: sin(a_n) = sin(1')*cos(a_{n-1}) + cos(1')*sin(a_{n-1})
         s_new = s * c0 + c * s0
         # cos(a_n) = sqrt(1 - sin^2(a_n))
@@ -48,9 +48,6 @@ def generate_trig_table():
             print(f"{degrees}° {minutes}'".ljust(12) + f"{s:<20.10f} {c:<20.10f}")
 
         n = n + 1
-
-        if n > 5400:
-            break
 
     # Final output: sin(90°) should be ≈ 1.0
     print("-" * 52)
