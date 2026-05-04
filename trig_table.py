@@ -38,4 +38,7 @@ def generate_trig_table(step: int = 5) -> None:
 
 if __name__ == "__main__":
     step = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+    if not (1 <= step <= 360):
+        print("Error: step must be between 1 and 360 degrees.", file=sys.stderr)
+        sys.exit(1)
     generate_trig_table(step)
